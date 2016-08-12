@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Tic-Tac-Toe.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<title>Tic-Tac-Toe</title>
+</head>
+<body>
+<div>
+<!-- This will appear after you choose the sign -->
+	<canvas id="playGround" width="600" height="600">
+		Your browser does not support the HTML5 canvas tag.
+	</canvas>
+</div>
+<div id="alert">
+	<h3>Choose your sign:</h3>
+	<table id="sign">
+		<tr>
+			<td><canvas id="x" width="200" height="200"></canvas></td>
+			<td><canvas id="o" width="200" height="200"></canvas></td>
+		</tr>
+	</table>
+	<div id="type">
+
+			<div style="font-size:2em;"><input onclick="setVal(this.value)" type="radio" name="type" value="pvp" checked="checked">PvP</div>
+			<div style="font-size:2em;"><input onclick="setVal(this.value)" type="radio" name="type" value="easy">Easy</div>
+			<!-- LOL, update later
+			<div style="font-size:2em;"><input onclick="setVal(this.value)" type="radio" name="type" value="hard">Hard</div>
+			<div style="font-size:2em;"><input onclick="setVal(this.value)" type="radio" name="type" value="hell">You can't win</div>
+			Remember to remake Tic
+			Remember to remake Tac
+			Remember to remake Troll
+			-->
+
+	</div>
+</div>
+<script type="text/javascript" src="Tic-Tac-Toe.js"></script>
+</body>
+</html>
